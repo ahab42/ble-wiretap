@@ -1,0 +1,19 @@
+[project]
+name = "ble-wiretap"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "ishmael", email = "ishmael@camp-omega" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "frida>=17.27.4",
+]
+
+[project.scripts]
+ble-wiretap = "ble_wiretap:main"
+
+[build-system]
+requires = ["uv_build>=0.13.8,<0.14.0"]
+build-backend = "uv_build"
